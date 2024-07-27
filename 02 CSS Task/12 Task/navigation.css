@@ -1,0 +1,25 @@
+li {
+    list-style: none;
+}
+
+.nav-bar {
+    background-color: lightblue;
+    padding: 40px;
+}
+
+#home-link {
+    font-size: 40px;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+li::before {
+    content: "#@$";
+    color: red;
+    margin: 10px;
+}
+
+/* Use the child combinator to style only the direct children of the main <ul> list.
+
+Use the adjacent sibling combinator to style a list item that follows another list item. */
+
