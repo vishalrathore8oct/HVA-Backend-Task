@@ -1,0 +1,16 @@
+.box-demo {
+    width: 100px;
+    border: 1px solid #000;
+    background-image: #e0e0e0;
+    padding: 100px;
+    margin: 100px;
+}
+
+.box-demo-2 {
+    width: 100px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-image: #e0e0e0;
+    padding: 100px;
+    margin: 100px;
+} 
