@@ -1,0 +1,35 @@
+.product-card {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    box-sizing: border-box;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightseagreen;
+}
+
+img, h2, p, span, button {
+    padding: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+span {
+    font-size: 20px;
+    color: #ff0000;
+}
+
+button {
+    padding: 20px;
+    border: 2px solid darkorange;
+    background-color: lightsalmon;
+}
