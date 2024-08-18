@@ -1,0 +1,28 @@
+h1 {
+    color: darkblue;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.article-container {
+    background-color: lightpink;
+    text-align: justify;
+    padding: 20px;
+}
+
+.article-meta {
+    color: gray;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
