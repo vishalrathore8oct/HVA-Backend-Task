@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    border: 2px dashed black;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.box {
+    box-sizing: border-box;
+    background-color:#c3dbeb;
+    border: 2px solid #608BA8;
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    flex-grow: 1;
+    height: 100px;
+}
+
+.box2 {
+    height: 150px;
+}
+
+.box3 {
+    height: 200px;
+}
