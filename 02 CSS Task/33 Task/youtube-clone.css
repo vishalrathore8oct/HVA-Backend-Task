@@ -160,15 +160,15 @@ main {
 }
 
 aside {
-    width: 25rem;
-    height: 100%;
+    width: 24rem;
+    height: 100vh;
     overflow-y: auto;
     scrollbar-width: none;
     /* border: 1px solid #FF00FF; */
+    padding: 0 2.4rem;
 }
 
 .aside-div {
-    /* border-top: 1px solid #837e7e; */
     border-bottom: 1px solid #837e7e;
 }
 
@@ -181,6 +181,10 @@ aside {
     display: flex;
     align-items: center;
     gap: 2.5rem;
+}
+
+.content img {
+    width: 25px;
 }
 
 .content span {
@@ -197,6 +201,7 @@ aside {
 
 footer {
     padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 footer div p {
@@ -218,7 +223,7 @@ section {
     scrollbar-width: none;
     /* border: 1px solid #FFA500; */
     position: relative;
-    padding-left: 6rem;
+    /* padding-left: 6rem; */
     /* margin: auto; */
 }
 
@@ -248,19 +253,25 @@ section {
 }
 
 .video-section {
+    /* margin: 0 auto; */
     margin-top: 5.6rem;
     min-height: 100%;
     width: 100%;
     /* border: 1px solid #A52A2A; */
     padding-top: 2.4rem;
-    display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
-    grid-template-columns: repeat( auto-fit, minmax(34rem, 1fr));
+    /* display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(34rem, 1fr));
+    gap: 1rem; */
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .video-container {
     width: 34rem;
     height: 30rem;
+    margin: 0 auto;
 }
 
 .img-container {
@@ -305,4 +316,79 @@ section {
 
 .video-title p span {
     color: #969191;
+}
+
+/* add media query for responsiveness */
+
+@media screen and (max-width: 945px) {
+    section {
+        padding: 0;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .aside-div,
+    footer {
+        display: none;
+    }
+
+    aside {
+        position: fixed;
+        background-color: #121212;
+        height: 5rem;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        margin: 0 auto;
+    }
+
+    .aside-div-main {
+        display: flex;
+        border-bottom: none;
+        margin-top: 1rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .menu-section {
+        padding: 0 1rem;
+    }
+
+    .hamburger,
+    .youtube-icon>span>sup,
+    .header-right,
+    .search-box-icon>input,
+    .mic-icon {
+        display: none;
+    }
+
+    .search-icon {
+        background-color: transparent;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .youtube-icon img {
+        margin-right: 1.5rem;
+    }
+
+    
 }
