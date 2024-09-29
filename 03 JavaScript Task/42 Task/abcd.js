@@ -17,20 +17,22 @@ class Employee {
     }
 }
 
-const manager = new Employee("Nikhil Pratap", "nikhil@gui.org", 30, "Project Development", "Chief Manager", 1000000)
 
 const newEmployee = new Employee("Shivam Dubey", "shivam@gui.org", 30, "UI Designer", "Junior Developer", 500000)
 
+console.log(newEmployee);
+
+const manager = new Employee("Nikhil Pratap", "nikhil@gui.org", 30, "Project Development", "Chief Manager", 1000000)
+
 console.log(manager);
+
+newEmployee.introduce()
+newEmployee.displaySalary()
 
 manager.introduce()
 manager.displaySalary()
 
-console.log(newEmployee);
 
-
-newEmployee.introduce()
-newEmployee.displaySalary()
 
 
 
