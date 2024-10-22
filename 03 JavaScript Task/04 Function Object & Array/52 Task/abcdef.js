@@ -71,7 +71,6 @@ updateProductWithMap(6, 600)
 
 console.log(inventory);
 
-
 function removeProduct(proId) {
 
     const newArr = inventory.filter(productObj => {
