@@ -33,34 +33,18 @@
             <button id="button"><i class="fa-solid fa-circle-plus"></i></button>
         </form>
 
-         <!-- New filter form section -->
-         <div class="filter-container">
-            <label for="filter-priority">Filter by Priority</label>
-            <select id="filter-priority">
-                <option value="all">All</option>
-                <option value="High">High</option>
-                <option value="Medium">Medium</option>
-                <option value="Low">Low</option>
-            </select>
-            <br>
-            <label for="filter-status">Filter by Status</label>
-            <select id="filter-status">
-                <option value="all">All</option>
-                <option value="pending">Pending</option>
-                <option value="completed">Completed</option>
-            </select>
-            <br>
-            <label for="filter-date">Due Date</label>
-            <input type="date" id="filter-date">
-            <br>
-            <button id="apply-filters">Apply Filters</button>
-        </div>
     </div>
     <div class="right-container">
-        <div id="pending-todos-list">
-            
+        <div class="pending-container">
+            <h1>Pending To Do Lists</h1>
+            <div id="pending-todos-list">
+            </div>
         </div>
-        <div id="completed-todos-list">
+        <div class="completed-container">
+            <h1>Completed To Do Lists</h1>
+            <div id="completed-todos-list">
+            </div>
+
         </div>
     </div>
 
